@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Css Files/main.css" />
+    <link rel="stylesheet" href="Css Files/2ndbody.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="imgs/sdada.png" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="maindiv">
+      <h1 class="heading">Stay One Step Ahead</h1>
+      <p class="slogan">
+        Enter your city to view the current and forecasted weather conditions
+      </p>
+
+      <div class="searchdiv">
+        <button class="searchbtn" id="searchbtn" onclick="store()">
+          <img src="imgs/search.png" alt="" />
+        </button>
+        <input
+          type="text"
+          placeholder="Enter your city name"
+          class="entercity"
+          id="entercity"
+        />
+      </div>
+    </div>
+
+    <div class="secondmain">
+     
+      <div id="newdiv">
+        <div class="city">
+          <h1 id="location">Mumbai,IN</h1>
+          <div class="tips" id="firsttip">
+            <img src="imgs/sun.png" alt="" />
+            <h5>Use sunscreen to prevent sunburn.</h5>
+          </div>
+
+          <div class="tips">
+            <img src="imgs/umbrella.png" alt="" />
+            <h5>Wear a hat to protect your face</h5>
+          </div>
+
+          <div class="tips">
+            <img src="imgs/hat.png" alt="" />
+            <h5>Wear a hat to protect your face</h5>
+          </div>
+        </div>
+
+        <div  id="data" class="data">
+          <div id="climate" class="climate">
+           <!-- <img class="climateimg" src="imgs/clear-sky.png" alt="" />
+            <h3 class="head">Clear Sky</h3>-->
+            Enter a city name
+          </div>
+
+        </div>
+      </div>
+
+      <div id="moredetails" class="hidden">
+        <h1>Hello</h1>
+      </div>
+            
+      <button id="details" class="details">More details</button>
+
+     <div id="daysdiv" class="daysdiv">
+        
+        <div class="days">
+          <p>Wed 28</p>
+          <img class="icon" src="imgs/clear-sky.png" alt="">
+          <p class="prevtemp">25°C</p>
+        </div>
+
+        <div class="days">
+          <p>Wed 28</p>
+          <img class="icon" src="imgs/clear-sky.png" alt="">
+          <p class="prevtemp">25°C</p>
+        </div>
+
+        <div class="days">
+          <p>Wed 28</p>
+          <img class="icon" src="imgs/clear-sky.png" alt="">
+          <p class="prevtemp">25°C</p>
+        </div>
+
+        <div class="days">
+          <p>Wed 28</p>
+          <img class="icon" src="imgs/clear-sky.png" alt="">
+          <p class="prevtemp">25°C</p>
+        </div>
+
+        <div class="days">
+          <p>Wed 28</p>
+          <img class="icon" src="imgs/clear-sky.png" alt="">
+          <p class="prevtemp">25°C</p>
+        </div>
+      
+      </div>
+    </div>
+
+    <script src="Js Files/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
