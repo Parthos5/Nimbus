@@ -1,0 +1,131 @@
+body{
+    margin:0;
+}
+
+/*navbar starts*/
+#nav{
+  background-color: transparent!important;
+  position: absolute;
+  width: 100%;
+  /*background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);*/
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 0 30px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.nav-link {
+  font-size: 1.4rem;
+}
+.navbar-brand {
+  font-size: 1.75rem !important;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+#navbarNav{
+ /* background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0)) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow:0px 17px 6px 0px rgb(0 0 0 / 37%)  !important;*/
+  text-align: center;
+  border-radius: 20px;
+}
+
+.show{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0)) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow:0px 17px 6px 0px rgb(0 0 0 / 37%)  !important;
+  animation-name: drop;
+  animation-duration: 0.5s;
+}
+
+@keyframes drop {
+  from{
+    height:0;
+  }
+  to{
+    height: 99.2px;
+  }
+  
+}
+
+
+/*navbar ends*/
+
+/*main body starts*/
+.maindiv{
+    background-image : url("../imgs/mainbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    /*background-color: hotpink;*/
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+  display: inline-block;
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+  font-size:95px;
+  color: #ffb38a; /*good colour*/
+  /*color: #ff8a01; good colour*/
+  margin-top: 10vw;
+}
+
+.slogan{
+  font-family:'Ramabhadra';
+  font-size: 22px;
+  color:white;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.searchdiv{
+  display: flex;
+  margin-top: 23px;
+}
+
+.entercity{
+  flex: 5;
+  height: 37px;
+  border-radius: 25px;
+  width: 32vw;
+  border: none;
+  padding: 10px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  font-size: 19px;
+}
+.searchbtn:focus{
+  outline: none;
+}
+.entercity:focus{
+  outline: none;
+}
+
+.entercity:active{
+  border:none;
+}
+
+.searchbtn{
+  flex:1;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.searchbtn img{
+  height: 35px;
+}
+/*main body ends*/
+
