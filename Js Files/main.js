@@ -1,5 +1,5 @@
 /*fetch(
-  `https://api.openweathermap.org/data/2.5/forecast?q=Mumbai&appid=104062d89c3cf3aee67a746f02c7b0e7`
+  `https://api.openweathermap.org/data/2.5/forecast?q=Mumbai&appid=`
 )
   .then((response) => response.json())
   .then((data) => console.log(data))
@@ -23,7 +23,7 @@ function store() {
 
   //fetching data from the api
   fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${a}&appid=104062d89c3cf3aee67a746f02c7b0e7`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${a}&appid=`
   )
     .then((response) => response.json())
     .then((data) => {
